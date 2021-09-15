@@ -1,0 +1,53 @@
+ls te indica un listado de los archivos de en donde estas en ese momento
+GIT entiende mejor el texto plano que los archivos binarios como word y eso
+cd ruta_que_quieres_ir es para cambiar el directorio e ir doned quieres ir cd / es el home
+ls -a es que muestre los archivos pero no en lista
+ls -al es que muestre todos los archivos incluso los ocultos y me los ponga en una lista
+clear limpia la consola
+cd .. te saca de la carpeta en la que te encuentras, un paso atras
+mkdir nombre_carpeta es para crear carpetas. Debes fijarte donde estas parado para saber donde se va a crear
+touch nombre_archivo.extension crea archivos vacios
+. es la carpeta actual
+.. es la carpeta anterior
+cat nombre_archivo.extension muestra el contenido de un archivo
+history muestra todos los comandos escritos
+!numero_de_comando y te repite el comando que esta en esa linea que ha sido visto con el comando history
+rm nombre_archivo.extension borra ese archivo(Cuidado con este, por que puede borrar el disco duro)
+
+
+
+
+
+//------------------------------------------------------------------------
+-git init: empieza un repositorio en tu carpeta y es donde se van a guardar los cambios de tus archivos
+
+-Pero tu carpeta debe saber que ese archivo existe entonces se utiliza:
+git add nombre_de_archivo.extension
+
+-Debes decirle que los cambios hechos en tus archivos estan listos. Entonces debes decir para que se guarden los ultimos cambios hechos, se utiliza:
+git commit 
+
+-Pero si quieres dejarle un mensaje para saber que cambiaste desde afuera puedes hacer:
+git commit -m "Mensaje"
+
+-Lo que hace es agregar todos los archivos que hayas cambiado en la carpeta donde estas
+git add . 
+
+-Despues de haber hecho git add . solo debes hacer otro commit para asegurar esos cambios
+
+-Para saber el status de tu repositorio, puedes usar, con esto puedes saber si hay algun cambio que no hayas anadido y eso:
+git status 
+
+-Te va a mostrar todos los cambios historicos hechos, incluyendo las lineas de texto cambiadas y todo:
+git show
+
+-Para saber la historia entera de un archivo:
+git log nombre_de_archivo.extension
+
+-Te permite enviar hacia otro repositorio remoto, lo que estas haciendo:
+git push 
+
+-Para traer el archivo de otro repositorio:
+git pull
+
+//------------------------------------------------------------------------
