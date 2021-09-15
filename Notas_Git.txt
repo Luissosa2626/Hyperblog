@@ -1,3 +1,8 @@
+Antes de hacer un commit debo especificar quien soy por 1ra vez. Para esto uso:
+git config --global user.name "nombre de la persona"
+git config --global user.email "un correo"
+//--------------------------------------------------------
+
 ls te indica un listado de los archivos de en donde estas en ese momento
 GIT entiende mejor el texto plano que los archivos binarios como word y eso
 cd ruta_que_quieres_ir es para cambiar el directorio e ir doned quieres ir cd / es el home
@@ -13,9 +18,13 @@ cat nombre_archivo.extension muestra el contenido de un archivo
 history muestra todos los comandos escritos
 !numero_de_comando y te repite el comando que esta en esa linea que ha sido visto con el comando history
 rm nombre_archivo.extension borra ese archivo(Cuidado con este, por que puede borrar el disco duro)
+-Para crear un repo dbes decir donde esta la carpeta central de tus archivos y escribir git init. Es como decir donde esta el index.html de una app
 
+-Cuando hago un git add lo guarda en memoria y para guardarlo de verdad uso git commit. EN caso de que le di git add a un archivo que no era, le puedo dar 
+git rm cached nombre_archivo.extension y lo quita de memoria
 
-
+-Un solo guion(-) indica que pasare una letra como argumento
+-2 guiones (--) indica que pasare una palabra como argumento
 
 
 //------------------------------------------------------------------------
@@ -51,3 +60,47 @@ git push
 git pull
 
 //------------------------------------------------------------------------
+//Historia hecha en el 1er curso
+
+$ history
+    1  ls
+    2  cd
+    3  pwd
+    4  pwd
+    5  git -version
+    6  git version
+    7  cd /c
+    8  ls
+    9  cd  users
+   10  cd ..
+   11  pwd
+   12  cd Curso_Git
+   13  cd
+   14  ls
+   15  ls -al
+   16  cd Desktop
+   17  cd Cursos
+   18  cd Curso_Git
+   19  git init
+   20  code
+   21  gi status
+   22  git status
+   23  git add historia.txt
+   24  git status
+   25  git commit -m "Este es el 1er commit de este archivo"
+   26  git config
+   27  git config --list
+   28  git config --list --show -origin
+   29  git config --global user.name "Luis Canot"
+   30  git config --global user.email "luisr.sosa26@gmail.com"
+   31  git commit -m "Este es el 1er commit de este archivo"
+   32  code
+   33  cat historia.txt
+   34  code
+   35  git status
+   36  git commit -m "Cambios al archivo de historia para reflejar los cambios hechos"
+   37  git add .
+   38  git commit -m "Cambios al archivo de historia para reflejar los cambios hechos"
+   39  history
+   40  git log historia.txt
+   41  history
