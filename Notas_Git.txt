@@ -26,6 +26,14 @@ git rm cached nombre_archivo.extension y lo quita de memoria
 -Un solo guion(-) indica que pasare una letra como argumento
 -2 guiones (--) indica que pasare una palabra como argumento
 
+-Para ver la diferecia de los cambios escribo
+git diff copiar los numeros del commit presentados en el git log numeros de otro commit
+
+-Si quieres unir el contenido de una rama con el contenido de otra rama se utiliza merge
+Ejemplo: si tienes una rama con una cosa y otra rama con otra cosa el merge los une para tener una version final
+
+-Conflicto es cuando un archivo rompe otro archivo cuando se hace un merge por ejemplo 
+
 
 //------------------------------------------------------------------------
 -git init: empieza un repositorio en tu carpeta y es donde se van a guardar los cambios de tus archivos
@@ -58,6 +66,8 @@ git push
 
 -Para traer el archivo de otro repositorio:
 git pull
+
+--Para volver a una version anterior
 
 //------------------------------------------------------------------------
 //Historia hecha en el 1er curso
