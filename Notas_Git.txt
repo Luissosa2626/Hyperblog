@@ -36,6 +36,7 @@ Ejemplo: si tienes una rama con una cosa y otra rama con otra cosa el merge los 
 
 
 //------------------------------------------------------------------------
+*Te posicionas sobre la carpeta que quieres que sea tu repo y le das git init, eso a traves de la consola de bash
 -git init: empieza un repositorio en tu carpeta y es donde se van a guardar los cambios de tus archivos
 
 -Pero tu carpeta debe saber que ese archivo existe entonces se utiliza:
@@ -67,8 +68,20 @@ git push
 -Para traer el archivo de otro repositorio:
 git pull
 
---Para volver a una version anterior
+--Para volver a una version anterior debemos utilizar 
+git reset codigo_del_commit_que_quiero_ir visto con el git log
 
+-Queremos que todo vuelva al estado anterior pero sin posibilidad de volver al futuro donde nos quedamos. Mejor usar git checkout, usamos:
+git reset codigo_del_commit_que_quiero_ir --hard
+git reset codigo_del_commit_que_quiero_ir --soft	//Lo que esta en cache o staging se queda en staging, sigue ahi pera el proximo commit
+
+-Si quiero ver los cambios a nivel de bytes hago un
+git log --stat
+Si quiero salir del log solo debo darle a la letra Q
+
+-Si queremos pasear por los cambios hechos anteriormente le damos 
+git checkout codigo_del_commit_que_quiero_ir nombre_del_archivo.extension	//Con esto puedo ver esa version
+get checkout master nombre_del_archivo.extension	//Con esto vuelvo a la version original donde estoy
 //------------------------------------------------------------------------
 //Historia hecha en el 1er curso
 
