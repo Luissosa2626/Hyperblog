@@ -127,3 +127,36 @@ $ history
    39  history
    40  git log historia.txt
    41  history
+
+//-------------------------------------------------------------------------------------------------------------------
+Trabajar con un servidor remoto, es decir , cuando estamos en un equipo de trabajo y todos mandan info al servidor remoto para unificar tareas
+-git clone url_del_servidor	//Crea una copia en tu directorio, tambien en el repositorio local y por ultimo en el repositorio remoto
+
+--git push	//Cuando ya si quiero mandar el ultimo commit hecho al repositorio remoto
+--git fetch	//Quiero traer una actualizacion del repositorio remoto por que alguien cambio algo
+//git merge	//El git fetch lo trae al repo local pero no a mi directorio, entonces uso este git merge para que lo traiga al directorio tambien
+--git pull	//Hace la funcion de git fetch y git merge. Trae los datos del repo remoto y los pone en mi directorio y en mi repo local
+--git branch nombre_de_la_rama	//Crea una rama
+--git checkout nombre_de_la_rama	//Te mueve a la rama que has creado, es decir , te mueve entre las ramas
+
+-------------------------------------------------
+Las ramas es la formas de hacer cambios sin afectar la rama principal que es master
+El commit mas reciente es el que se llama HEAD
+La rama se va a crear en el lugar en el que estoy
+El git status te dice donde estas en la parte de "On branch master"
+El git show puede mostrarte quien es el HEAD, en la parte HEAD <- master
+Cuando haces muchos cambios en una rama es bueno hacerle un git commit -am "comentario" por si cambias de rama no se pierdan los cambios
+Git branch escrito solo, te dice cuales y cuantas ramas han sido creadas
+git merch nombre_rama_que_quier_que_venga	//Para salir del mensaje del merge, le doy End+Shift+Z+Z
+
+El merge siempre va a ocurrir en la rama donde estoy, ojo ahi. Si estoy en cabecera y hago un merge, este se hara en cabecera, es decir, mando la info de master a cabecera. Entonces debo cambiarme a master en este caso para hacer el merge
+
+'Puedo hacer git -am "Comentario"	/Esto hace add y commit a archivos que previamente les habia hecho git add sino no funcionara
+
+//Nota:
+Puedo crear una rama haciendo git branch, es decir, haces una copia exacta de la rama en la que estabas. Entonces puedo seguir modificando el archivo pero ya los cambios se refleajaran en la rama que he creado. Puedo moverme entre ramas con git checkout. Si hago un cambio en una rama, otras ramas no lo veran a menos que haga git merge.
+
+//Manejo de conflictos al hacer un merge
+
+
+
